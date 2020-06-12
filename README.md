@@ -16,4 +16,4 @@ a.foo2 called
 
 ## Expected behavior
 
-`b.foo` being private should be a type mismatch error, or at least an error. See `a.bar` and `a.quux` for two methods that provide a type mismatch error. Otherwise it fails silently and breaks expectations, where you need to pay attention to details of other inner modules.
+`b.foo` being private should be a type mismatch error, or at least a warning. See `a.bar` and `a.quux` for two methods that provide a type mismatch error. Otherwise it fails silently and breaks expectations, where you need to pay attention to details of other inner modules. For example, you get bugs like https://github.com/status-im/nim-libp2p/pull/193
